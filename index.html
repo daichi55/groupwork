@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>動いたら食べろ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
+  </head>
+  <body>
+    
+    <article id="calculator">
+      <div id="error" class="hide">
+        <h2>エラーです</h2>
+        <ul>
+          <li>半角の数字で数値を入力してください</li>
+          <li>性別・年齢欄にチェックをしてください</li>
+          
+        </ul>
+      </div>
+      <form>
+        &emsp;&emsp;
+        ＊半角の数字で入力してください<br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        体重：<input type="text" id="operand_a">kg<br>
+　　　　　性別・年齢：
+<input type="radio" name="sexage" value="1.06"> 18歳男性　</input>
+<input type="radio" name="sexage" value="1.04" > 19歳男性　</input>
+<input type="radio" name="sexage" value="1.00" > 20代男性</input>
+<input type="radio" name="sexage" value="0.96" > 30代男性</input>
+<input type="radio" name="sexage" value="0.94" > 40代男性　</input>
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<input type="radio" name="性別・年齢" value="0.95" > 18歳女性　</input>
+<input type="radio" name="性別・年齢" value="0.93" > 19歳女性</input>
+<input type="radio" name="性別・年齢" value="0.93" > 20代女性</input>
+<input type="radio" name="性別・年齢" value="0.87"> 30代女性</input>
+<input type="radio" name="性別・年齢" value="0.85"> 40代女性</input>
+       <br> 
+       &emsp;&emsp;&emsp;&emsp;&emsp;
+        運動の種類と時間：<select id="operator">
+          <option>歩行</option>
+          <option>ジョギング</option>
+          <option>階段上り</option>
+          <option>階段下り</option>
+          <option>自転車</option>
+          <option>入浴</option>
+          <option>掃除</option>
+          <option>サッカー</option>
+          <option>バスケ</option>
+          <option>水泳（クロール）</option>
+          <option>テニス</option>
+          <option>バトミントン</option>
+          <option>ゴルフ</option>
+        </select><input type="text" id="operand_b">分
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <button type="button" id="calcButton">計算</button>
+        <br><br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text" id="output">kcal消費しました<br>
+        
+
+        
+      </form>
+    </article>
+    <script src="js/app.js"></script>
+  </body>
+</html>
